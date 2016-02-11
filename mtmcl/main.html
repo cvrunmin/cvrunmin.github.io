@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="cvronmin.GitHub.io : MTMCL">
+    <meta name="keywords" content="Minecraft Launcher">
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+<title>cvronmin.GitHub.io-MTMCL</title>
+</head>
+<body>
+<div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/cvronmin">View on GitHub</a>
+          <a id="forkproject_banner" href="https://github.com/cvronmin/metocraft">View MTMCL Project on GitHub</a>
+
+          <h1 id="project_title">MTMCL</h1>
+          <h2 id="project_tagline">Minecraft啟動器新體驗<br/>New experience for Minecraft launcher</h2>
+          <section id="links" name="links">
+            <a id="normal_banner" href="index.html">主頁Main Page</a>
+            <a id="normal_banner" href="mtmcl/main.html">MTMCL</a>
+            <a id="normal_banner" href="links/main.html">友情連結Links</a>
+            </section>
+        </header>
+</div>
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+  <img src="images/main1.PNG" width="607" height="393"/>
+  <h3>簡介 Introduction</h3>
+  <p>
+  這是一個帶有Metro風格的Minecraft啟動器。<br/>This is a Minecraft launcher with Metro style.
+  </p>
+  <h3>對於玩家 For Player</h3>
+  你可以使用此啟動器來：<br>You can use this launcher for: 
+  <ol>
+    <li>啟動原版Minecraft<br>Launch Vanilla Minecraft</li>
+    <li>啟動Minecraft Forge或LiteLoader<br>Launch Minecraft Forge or LiteLoader</li>
+    <li>下載客戶端（包括原版及Minecraft Forge）、庫、資源<sup id="ref-1" class="reference"><a href="#remark-1">[1]</a></sup><br>Download Client(including Vanilla and Minecraft Forge), libraries and resources(assets)</li>
+    <li>自定義啟動器<br>Customize the launcher</li>
+  </ol>
+  <h3>對於服務器主 For Server Owner</h3>
+  你可以為啟動器套用相應文件以配合你的服務器<br>You can apply the file to match your server<br>
+  以下是格式 Here is the format: 
+  <pre><code>{
+    /*啟動器標題 Launcher Title(Unicode)*/
+    "title"  : "\u6DF7\u5409Server",
+    /*服務器名稱 Server name*/
+    "server-name" : "a server",
+    /*服務器IP Server IP*/
+    "server-ip"   : "127.0.0.1:25565",
+    /*客戶端名稱 Client name(作為遊戲路徑 as game directory)*/
+    "client-name" : ".minecraft",
+    /*是否需要下載整合包 Is it necessary to download mod pack?*/
+    "need-server-pack" : true,
+    /*整合包網址(need-server-pack值為false時可留空) Mod pack address(blank is allowed if need-server-pack is false)*/
+    "server-pack-url"  : "https://www.dropbox.com/s/*****/*****?dl=1",
+    /*是否允許下載庫及資源Is it allow to download libraries and assets?*/
+    "allow-download-library-and-asset" : false,
+    /*是否允許重新下載庫及資源Is it allow to re-download libraries and assets?*/
+    "allow-redownload-library-and-asset" : false,
+    /*是否允許自行下載客戶端Is it allow to download client by user themselves?*/
+    "allow-self-download-client"         : false,
+    /*是否鎖定背景Is it lock background?*/
+    "lock-background"                    : true,
+    /*背景路徑Background Path*/
+    "background-path"                    : "C:\\Users\\Ryan\\Pictures\\idle10.png",
+    /*自定義認證服務器custom authenticator*/
+    "auths"                              : [
+        {
+            /*名稱name*/
+            "auth-name" : "Local 1",
+            /*網址url*/
+            "auth-url"  : "127.0.0.1"
+        },
+        {
+            "auth-name" : "Local 2",
+            "auth-url"  : "localhost"
+        },
+        {
+            "auth-name" : "Local 3",
+            "auth-url"  : "127.0.0.1"
+        },
+        {
+            "auth-name" : "Local 4",
+            "auth-url"  : "127.0.0.1"
+        }
+    ]
+}</code></pre>
+<h3>下載 Download</h3>
+<a href="https://github.com/cvronmin/metocraft/releases/latest">最新發布 Latest Release</a><br>
+<a href="https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.57/MTMCL.exe">從GitHub下載 Download from GitHub</a><br>
+<a href="http://pan.baidu.com/s/1skb2zbJ">從百度雲下載 Download From Baidu Yun</a><br>
+另：源代碼可在GitHub查看<br>PS: Sources code can be view at GitHub
+<p><h3>鳴謝 Thanks</h3><br>
+感謝bangbang93提供BMCLV3代碼。Thank bangbang93 for the sources code of BMCLV3<br>
+感謝MineStudio的KMCCC庫。Thank MineStudio for KMCCC library<br>
+感謝其他網上教程。Thank the other tutorials on the Internet
+  <hr>
+  <h5>備注 Remarks:</h5>
+  <span id="remark-1"><a href="#ref-1">^</a>啟動器支援官方源、BMCLAPI源。Launcher supports official and BMCLAPI download source.</span>
+  </section>
+</div>
+<div id="footer_wrap" class="outer">
+<footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+</footer>
+</div>
+</body>
+</html>
