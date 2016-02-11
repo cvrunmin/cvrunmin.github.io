@@ -1,12 +1,19 @@
 {
     "versions" : [
         {
+            "version" : "1.0.0.56",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.56/MTMCL.exe",
+            "info"    : "fixed unable to replace outdated version bug"
+        },
+        {
             "version" : "1.0.0.55",
-            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.55/MTMCL.exe"
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.55/MTMCL.exe",
+            "info"    : null
         },
         {
             "version" : "1.0.0.54",
-            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.54/MTMCL.exe"
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.54/MTMCL.exe",
+            "info"    : null
         }
     ]
 }
