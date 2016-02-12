@@ -1,6 +1,11 @@
 {
     "versions" : [
         {
+            "version" : "1.0.0.58",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.58/MTMCL.exe",
+            "info"    : "updated KMCCC"
+        },
+        {
             "version" : "1.0.0.57",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.57/MTMCL.exe",
             "info"    : "fixed cannot relaunch launcher bug"
