@@ -1,6 +1,11 @@
 {
     "versions" : [
         {
+            "version" : "1.0.0.59",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.59/MTMCL.exe",
+            "info"    : "fixed bug in download client using BMCLAPI source"
+        },
+        {
             "version" : "1.0.0.58",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.58/MTMCL.exe",
             "info"    : "updated KMCCC"
