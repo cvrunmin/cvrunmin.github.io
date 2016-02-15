@@ -1,5 +1,10 @@
 {
     "versions" : [
+                {
+            "version" : "1.0.0.61",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.61/MTMCL.exe",
+            "info"    : "simply fixed unable to download assets bug"
+        },
         {
             "version" : "1.0.0.60",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.0.60/MTMCL.exe",
