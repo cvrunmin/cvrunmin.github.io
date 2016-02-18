@@ -1,6 +1,11 @@
 {
     "versions" : [
         {
+            "version" : "1.0.1.63",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.1.63/MTMCL.exe",
+            "info"    : "updated UI, fixed bugs"
+        },
+        {
             "version" : "1.0.1.62",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.1.62/MTMCL.exe",
             "info"    : "updated UI, added library checking function before game is launching"
