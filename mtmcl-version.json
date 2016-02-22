@@ -1,6 +1,11 @@
 {
     "versions" : [
         {
+            "version" : "1.0.2.66",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.2.66/MTMCL.exe",
+            "info"    : "support new version json, improve performence"
+        },
+        {
             "version" : "1.0.1.64",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.1.64/MTMCL.exe",
             "info"    : "added update source"
