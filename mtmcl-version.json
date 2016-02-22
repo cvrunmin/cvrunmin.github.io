@@ -1,6 +1,11 @@
 {
     "versions" : [
         {
+            "version" : "1.0.2.67",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.2.67/MTMCL.exe",
+            "info"    : "fixed forge version bug"
+        },
+        {
             "version" : "1.0.2.66",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.2.66/MTMCL.exe",
             "info"    : "support new version json, improve performence"
