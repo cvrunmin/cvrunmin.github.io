@@ -1,9 +1,14 @@
 {
     "specific-version" : {
-        "latest" : "1.0.2.69",
-        "recommand" : "1.0.2.69"
+        "latest" : "2.0.3.71",
+        "recommand" : "2.0.3.71"
     },
     "versions" : [
+        {
+            "version" : "2.0.3.71",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.0.3.71/MTMCL.exe",
+            "info"    : "rewrite launcher\nyou are connected to GitHub\n\u4F60\u5DF2\u9023\u63A5\u5230GitHub\n\u4f60\u5df2\u8fde\u63a5\u5230GitHub"
+        },
         {
             "version" : "1.0.2.69",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v1.0.2.69/MTMCL.exe",
