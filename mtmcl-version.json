@@ -1,9 +1,14 @@
 {
     "specific-version" : {
-        "latest" : "2.0.4.75",
+        "latest" : "2.0.4.76",
         "recommand" : "2.0.4.75"
     },
     "versions" : [
+        {
+            "version" : "2.0.4.76",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.0.4.76/MTMCL.exe",
+            "info"    : "allowing virtual assets creation continue although assets files are missing\nApplication compresstion\nyou are connected to GitHub\n\u4F60\u5DF2\u9023\u63A5\u5230GitHub\n\u4f60\u5df2\u8fde\u63a5\u5230GitHub"
+        },
         {
             "version" : "2.0.4.75",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.0.4.75/MTMCL.exe",
