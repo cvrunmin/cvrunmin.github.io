@@ -1,12 +1,12 @@
 {
     "specific-version" : {
-        "latest" : "2.1.5.79",
-        "recommand" : "2.1.5.79"
+        "latest" : "2.1.5.81",
+        "recommand" : "2.1.5.81"
     },
     "versions" : [
         {
-            "version" : "2.1.5.79",
-            "url"     : "http://download.x-speed.cc/link/215431830452519",
+            "version" : "2.1.5.81",
+            "url"     : "http://download.x-speed.cc/link/715221835463717",
             "info"    : "Add LiteLoader install function"
         },
         {
