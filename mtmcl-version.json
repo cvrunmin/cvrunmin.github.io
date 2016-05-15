@@ -1,9 +1,14 @@
 {
     "specific-version" : {
-        "latest" : "2.1.5.81",
+        "latest" : "2.1.5.84",
         "recommand" : "2.1.5.81"
     },
     "versions" : [
+        {
+            "version" : "2.1.5.84",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.84/MTMCL.exe",
+            "info"    : "Add Forge filter"
+        },
         {
             "version" : "2.1.5.81",
             "url"     : "https://coding.net/api/share/download/63146ecc-d8cf-45a3-a06a-603082a7d80c",
