@@ -1,9 +1,14 @@
 {
     "specific-version" : {
-        "latest" : "2.1.5.84",
+        "latest" : "2.1.5.87",
         "recommand" : "2.1.5.81"
     },
     "versions" : [
+        {
+            "version" : "2.1.5.87",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.87/MTMCL.exe",
+            "info"    : "Add Help Function"
+        },
         {
             "version" : "2.1.5.84",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.84/MTMCL.exe",
