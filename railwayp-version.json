@@ -1,15 +1,15 @@
 {
-  "homepage": "",
+  "homepage": "http://cvronmin.github.io/railwayp/download.html",
   "promos": {
-    "1.9-latest"     : "0",
-    "1.9-recomended" : "0",
+    "1.9-latest"     : "1.9_1.0",
+    "1.9-recomended" : "1.9_1.0",
     "1.8.9-latest" : "0",
     "1.8.9-recomended" : "0",
     "1.8-latest" : "0",
     "1.8-recomended" : "0"
   },
   "1.9" : {
-    "0" : ""
+    "1.9_1.0" : "Initial release. Introduced Platform Signage, Name Signage, Signage, Plate, Mosaic Tile, Platform Door, Platform Glass."
   },
   "1.8.9" : {
     "0" : ""
