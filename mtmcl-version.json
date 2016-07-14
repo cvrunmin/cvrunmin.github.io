@@ -1,13 +1,14 @@
 {
     "specific-version" : {
         "latest" : "2.1.5.91",
-        "recommand" : "2.1.5.90"
+        "recommand" : "2.1.5.91"
     },
     "versions" : [
         {
             "version" : "2.1.5.91",
-            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.91/MTMCL.exe",
-            "info"    : "unexist native folder bug fixing, color changed"
+            "url"     : "http://download.x-speed.cc/link/315221919826260",
+            "backup-url": "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.91/MTMCL.exe",
+            "info"      : "unexist native folder bug fixing, color changed"
         },
         {
             "version" : "2.1.5.90",
