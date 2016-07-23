@@ -6,7 +6,7 @@
     "versions" : [
         {
             "version" : "2.1.5.92",
-            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.92/MTMCL.exe",
+            "url"     : "http://download.x-speed.cc/link/915221925186299",
             "backup-url": "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.92/MTMCL.exe",
             "info"      : "fix play page always display \"version not found\" bug"
         },
