@@ -1,9 +1,15 @@
 {
     "specific-version" : {
-        "latest" : "2.1.5.96",
+        "latest" : "2.1.5.101",
         "recommand" : "2.1.5.92"
     },
     "versions" : [
+        {
+            "version" : "2.1.5.101",
+            "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.101/MTMCL.exe",
+            "backup-url": "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.101/MTMCL.exe",
+            "info"      : "re-design Play page, introduce Theme system"
+        },
         {
             "version" : "2.1.5.96",
             "url"     : "https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.96/MTMCL.exe",
