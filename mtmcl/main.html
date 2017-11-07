@@ -5,110 +5,218 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="cvronmin.GitHub.io : MTMCL">
     <meta name="keywords" content="Minecraft Launcher">
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
-<title>cvronmin.GitHub.io-MTMCL</title>
+    <title>cvrunmin-MTMCL</title>
+
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
 </head>
 <body>
-<div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/cvronmin">View on GitHub</a>
-          <a id="forkproject_banner" href="https://github.com/cvronmin/metocraft">View MTMCL Project on GitHub</a>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top"
+         style=" background: linear-gradient(rgba(37, 136,92,1) 0%, rgba(37, 136, 92, 1) 85%, rgba(255,255,255,0) 100%)">
+        <span class="navbar-brand mb-0 h1">cvrunmin's OpenSpace</span>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Pieces</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="#">MTMCL</a>
+                        <a class="dropdown-item" href="#">Minecraft Mods</a>
+                        <a class="dropdown-item" href="#">UTAUloid</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../links.html">Links</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!--<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/cvronmin">View on GitHub</a>
+        <a id="forkproject_banner" href="https://github.com/cvronmin/metocraft">View MTMCL Project on GitHub</a>
 
-          <h1 id="project_title">MTMCL</h1>
-          <h2 id="project_tagline">Minecraft啟動器新體驗<br/>New experience for Minecraft launcher</h2>
-          <section id="links" name="links">
+        <h1 id="project_title">MTMCL</h1>
+        <h2 id="project_tagline">Minecraft啟動器新體驗<br/>New experience for Minecraft launcher</h2>
+        <section id="links" name="links">
             <a id="normal_banner" href="../index.html">主頁Main Page</a>
             <a id="normal_banner" href="main.html">MTMCL</a>
             <a id="normal_banner" href="../links.html">友情連結Links</a>
             <a id="normal_banner" href="../contact.html">聯絡Contact</a>
-            </section>
-            <section id="sublinks" name="sublinks">
+        </section>
+        <section id="sublinks" name="sublinks">
             <a href="main.html" id="small_normal_banner">MTMCL主頁 Main Page</a>
-                        <a href="gui.html" id="small_normal_banner">界面 Interface</a>
-            </section>
-        </header>
+            <a href="gui.html" id="small_normal_banner">界面 Interface</a>
+        </section>
+    </header>
+</div>-->
+<div class="card-deck" style="padding: 5% 5% 0 5%">
+    <div class="card">
+        <div class="card-header">
+            <nav class="nav nav-tabs card-header-tabs" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                   aria-controls="nav-home" aria-selected="true">Home</a>
+                <a class="nav-item nav-link" id="nav-interface-tab" data-toggle="tab" href="#nav-interface" role="tab"
+                   aria-controls="nav-interface" aria-selected="false">Interface</a>
+            </nav>
+        </div>
+        <div class="tab-content card-body" id="nav-tabContent">
+            <div id="nav-home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab">
+                <section id="main_content" class="inner">
+                    <img src="images/main1.PNG" width="607" height="393"/>
+                    <h3>簡介 Introduction</h3>
+                    <p>
+                        這是一個帶有Metro風格的Minecraft啟動器。<br/>This is a Minecraft launcher with Metro style.
+                    </p>
+                    <h3>對於玩家 For Player</h3>
+                    你可以使用此啟動器來：<br>You can use this launcher for:
+                    <ol>
+                        <li>啟動原版Minecraft<br>Launch Vanilla Minecraft</li>
+                        <li>啟動Minecraft Forge或LiteLoader<br>Launch Minecraft Forge or LiteLoader</li>
+                        <li>下載客戶端（包括原版及Minecraft Forge）、庫、資源<a href="#" data-toggle="tooltip" data-html="true"
+                                                               title="啟動器支援官方源、BMCLAPI源。<br>Launcher supports official and BMCLAPI download source.">[1]</a><br>Download
+                            Client(including Vanilla and Minecraft Forge),
+                            libraries and resources(assets)
+                        </li>
+                        <li>自定義啟動器<br>Customize the launcher</li>
+                    </ol>
+                    <h3>對於服務器主 For Server Owner</h3>
+                    你可以為啟動器套用相應文件以配合你的服務器<br>You can apply the file to match your server<br>
+                    以下是格式 Here is the format:
+                    <div class="alert alert-danger" role="alert">
+                        <h4 class="alert-heading">Warning!</h4>
+                        <p>This function is still in progress and may have unanticipated result and further changes. Use with caution.</p>
+                    </div>
+                    <div id="accordion" role="tablist">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="heading">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapse" aria-expanded="true" aria-controls="collapse">
+                                        Show the format
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapse" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <pre><code>{
+                        /*啟動器標題 Launcher Title(Unicode)*/
+                        "title" : "\u6DF7\u5409Server",
+                        /*服務器名稱 Server name*/
+                        "server-name" : "a server",
+                        /*服務器IP Server IP*/
+                        "server-ip" : "127.0.0.1:25565",
+                        /*客戶端名稱 Client name(作為遊戲路徑 as game directory)*/
+                        "client-name" : ".minecraft",
+                        /*是否需要下載整合包 Is it necessary to download mod pack?*/
+                        "need-server-pack" : true,
+                        /*整合包網址(need-server-pack值為false時可留空) Mod pack address(blank is allowed if need-server-pack is
+                        false)*/
+                        "server-pack-url" : "https://www.dropbox.com/s/*****/*****?dl=1",
+                        /*是否允許下載庫及資源Is it allow to download libraries and assets?*/
+                        "allow-download-library-and-asset" : false,
+                        /*是否允許重新下載庫及資源Is it allow to re-download libraries and assets?*/
+                        "allow-redownload-library-and-asset" : false,
+                        /*是否允許自行下載客戶端Is it allow to download client by user themselves?*/
+                        "allow-self-download-client" : false,
+                        /*是否鎖定背景Is it lock background?*/
+                        "lock-background" : true,
+                        /*背景路徑Background Path*/
+                        "background-path" : "C:\\Users\\Ryan\\Pictures\\idle10.png",
+                        /*自定義認證服務器custom authenticator*/
+                        "auths" : [
+                        {
+                        /*名稱name*/
+                        "auth-name" : "Local 1",
+                        /*網址url*/
+                        "auth-url" : "127.0.0.1"
+                        },
+                        {
+                        "auth-name" : "Local 2",
+                        "auth-url" : "localhost"
+                        },
+                        {
+                        "auth-name" : "Local 3",
+                        "auth-url" : "127.0.0.1"
+                        },
+                        {
+                        "auth-name" : "Local 4",
+                        "auth-url" : "127.0.0.1"
+                        }
+                        ]
+                        }</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>下載 Download</h3>
+                    <a href="https://github.com/cvronmin/metocraft/releases/latest">最新發布 Latest Release</a><br>
+                    <a href="https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.101/MTMCL.exe">從GitHub下載
+                        Download from GitHub</a><br>
+                    <a href="http://pan.baidu.com/s/1nu2FoKx">從百度雲下載 Download From Baidu Yun</a><br>
+                    另：源代碼可在GitHub查看<br>PS: Sources code can be view at GitHub
+                    <p>
+                    <h3>鳴謝 Thanks</h3><br>
+                    感謝bangbang93開放BMCLV3代碼。Thank bangbang93 for the sources code of BMCLV3<br>
+                    感謝其他網上教程。Thank the other tutorials on the Internet
+                    <hr>
+                </section>
+            </div>
+            <div id="nav-interface" class="tab-pane fade show" role="tabpanel" aria-labelledby="nav-interface-tab">
+                <section id="main_content" class="inner">
+                    <h3>界面 Interface</h3>
+                    <img src="images/gui1.PNG" width="1001" height="393" alt=""/>
+                    <ol>
+                        <li>切換至遊戲啟動界面 Switch to Game Launching Interface</li>
+                        <li>切換至下載界面 Switch to Download Interface</li>
+                        <li>切換至設定界面 Switch to Setting Interface</li>
+                        <li>切換至關於界面 Switch to About Interface</li>
+                        <li>切換至高級遊戲啟動界面 Switch to Advanced Game Launching Interface</li>
+                        <li>打開/關閉任務列表 Open/Close the Task List</li>
+                    </ol>
+                    <img src="images/gui2.PNG" width="607" height="393" alt=""/> <img src="images/gui2-1.PNG"
+                                                                                      width="607"
+                                                                                      height="393" alt=""/> <img
+                        src="images/gui2-2.PNG" width="607" height="393" alt=""/> <img src="images/gui2-3.PNG"
+                                                                                       width="607"
+                                                                                       height="393" alt=""/> <img
+                        src="images/gui2-4.PNG" width="607" height="393" alt=""/> <img src="images/gui2-5.PNG"
+                                                                                       width="607"
+                                                                                       height="393" alt=""/> <img
+                        src="images/gui3.PNG" width="607" height="393" alt=""/> <img src="images/gui4.PNG" width="607"
+                                                                                     height="393" alt=""/></section>
+
+            </div>
+        </div>
+    </div>
 </div>
-<div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
-  <img src="images/main1.PNG" width="607" height="393"/>
-  <h3>簡介 Introduction</h3>
-  <p>
-  這是一個帶有Metro風格的Minecraft啟動器。<br/>This is a Minecraft launcher with Metro style.
-  </p>
-  <h3>對於玩家 For Player</h3>
-  你可以使用此啟動器來：<br>You can use this launcher for: 
-  <ol>
-    <li>啟動原版Minecraft<br>Launch Vanilla Minecraft</li>
-    <li>啟動Minecraft Forge或LiteLoader<br>Launch Minecraft Forge or LiteLoader</li>
-    <li>下載客戶端（包括原版及Minecraft Forge）、庫、資源<sup id="ref-1" class="reference"><a href="#remark-1">[1]</a></sup><br>Download Client(including Vanilla and Minecraft Forge), libraries and resources(assets)</li>
-    <li>自定義啟動器<br>Customize the launcher</li>
-  </ol>
-  <h3>對於服務器主 For Server Owner</h3>
-  你可以為啟動器套用相應文件以配合你的服務器<br>You can apply the file to match your server<br>
-  以下是格式 Here is the format: 
-  <pre><code>{
-    /*啟動器標題 Launcher Title(Unicode)*/
-    "title"  : "\u6DF7\u5409Server",
-    /*服務器名稱 Server name*/
-    "server-name" : "a server",
-    /*服務器IP Server IP*/
-    "server-ip"   : "127.0.0.1:25565",
-    /*客戶端名稱 Client name(作為遊戲路徑 as game directory)*/
-    "client-name" : ".minecraft",
-    /*是否需要下載整合包 Is it necessary to download mod pack?*/
-    "need-server-pack" : true,
-    /*整合包網址(need-server-pack值為false時可留空) Mod pack address(blank is allowed if need-server-pack is false)*/
-    "server-pack-url"  : "https://www.dropbox.com/s/*****/*****?dl=1",
-    /*是否允許下載庫及資源Is it allow to download libraries and assets?*/
-    "allow-download-library-and-asset" : false,
-    /*是否允許重新下載庫及資源Is it allow to re-download libraries and assets?*/
-    "allow-redownload-library-and-asset" : false,
-    /*是否允許自行下載客戶端Is it allow to download client by user themselves?*/
-    "allow-self-download-client"         : false,
-    /*是否鎖定背景Is it lock background?*/
-    "lock-background"                    : true,
-    /*背景路徑Background Path*/
-    "background-path"                    : "C:\\Users\\Ryan\\Pictures\\idle10.png",
-    /*自定義認證服務器custom authenticator*/
-    "auths"                              : [
-        {
-            /*名稱name*/
-            "auth-name" : "Local 1",
-            /*網址url*/
-            "auth-url"  : "127.0.0.1"
-        },
-        {
-            "auth-name" : "Local 2",
-            "auth-url"  : "localhost"
-        },
-        {
-            "auth-name" : "Local 3",
-            "auth-url"  : "127.0.0.1"
-        },
-        {
-            "auth-name" : "Local 4",
-            "auth-url"  : "127.0.0.1"
-        }
-    ]
-}</code></pre>
-<h3>下載 Download</h3>
-<a href="https://github.com/cvronmin/metocraft/releases/latest">最新發布 Latest Release</a><br>
-<a href="https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.0.3.71/MTMCL.exe">從GitHub下載 Download from GitHub</a><br>
-<a href="http://pan.baidu.com/s/1nu2FoKx">從百度雲下載 Download From Baidu Yun</a><br>
-另：源代碼可在GitHub查看<br>PS: Sources code can be view at GitHub
-<p><h3>鳴謝 Thanks</h3><br>
-感謝bangbang93提供BMCLV3代碼。Thank bangbang93 for the sources code of BMCLV3<br>
-感謝MineStudio的KMCCC庫。Thank MineStudio for KMCCC library<br>
-感謝其他網上教程。Thank the other tutorials on the Internet
-  <hr>
-  <h5>備注 Remarks:</h5>
-  <span id="remark-1"><a href="#ref-1">^</a>啟動器支援官方源、BMCLAPI源。Launcher supports official and BMCLAPI download source.</span>
-  </section>
-</div>
-<div id="footer_wrap" class="outer">
-<footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<!-- FOOTER  -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-2 mx-auto text-center">
+                <p class="text-muted">Copyright &copy; cvrunmin</p>
+                <h6 class="text-muted">Powered by Bootstrap</h6>
+            </div>
+        </div>
+    </div>
 </footer>
-</div>
+<script src="../jquery/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/scripts.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 90%;
+    background: #25885c;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vertical-center h1{
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background: linear-gradient(#25885c, darkgreen);
+}
+
+footer #landing {
+    height: 10%;
+}
+
+div.disabled img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
