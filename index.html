@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cvrunmin's OpenSpace</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body style="background-color: black">
+<div id="actualBody" style="display: none;height: 100%">
+    <header class="header">
+        <div class="vertical-center" style="display: none">
+            <h1>cvrunmin.GitHub.io</h1>
+            <h3>Welcome to cvrunmin's OpenSpace</h3>
+            <div id="butLinks" style="top: 50px;opacity: 0; position: relative">
+            <a href="#" class="btn btn-dark btn-lg disabled" role="button" aria-disabled="true">About me</a>
+            <a href="#" class="btn btn-dark btn-lg dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pieces</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/mtmcl/main.html">MTMCL</a>
+                    <a class="dropdown-item" href="#">Minecraft Mods</a>
+                    <a class="dropdown-item" href="#">UTAUloid</a>
+                </div>
+                <a href="links.html" class="btn btn-dark btn-lg" role="button">Links</a>
+            </div>
+        </div>
+    </header>
+    <footer id="landing">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 mx-auto text-center">
+                    <p class="text-muted">Copyright &copy; cvrunmin</p>
+                    <h6 class="text-muted">Powered by Bootstrap</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="jquery/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#actualBody").fadeIn(750, function(){
+            $("#actualBody").find("div.vertical-center").fadeIn(750, function(){
+                $("#butLinks").animate({
+                    top: '0px',
+                    opacity: '1.0'
+                });
+            });
+        });
+    })
+</script>
+</body>
+</html>
