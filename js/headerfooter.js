@@ -31,7 +31,6 @@ const FOOTER = `<footer>
         <div class="row">
             <div class="col-2 mx-auto text-center">
                 <p class="text-muted">Copyright &copy; cvrunmin</p>
-                <h6 class="text-muted">Powered by Bootstrap</h6>
             </div>
         </div>
     </div>
