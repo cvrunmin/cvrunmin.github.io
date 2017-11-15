@@ -64,7 +64,7 @@ function getLocale() {
 }
 
 function getLocalizedPage(unlocal, locale) {
-    return c.origin + '/' + ((typeof locale !== undefined) ? locale : getLocale()) + unlocal;
+    return c.origin + '/' + ((locale !== undefined) ? locale : getLocale()) + unlocal;
 }
 
 function onmenuLinkClick(a) {
