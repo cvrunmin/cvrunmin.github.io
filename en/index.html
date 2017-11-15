@@ -3,33 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>cvrunmin's OpenSpace</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script>
-        /*
-From https://stackoverflow.com/questions/19491336/get-url-parameter-jquery-or-how-to-get-query-string-values-in-js
- */
-        function getUrlParameter(sParam) {
-            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                sURLVariables = sPageURL.split('&'),
-                sParameterName,
-                i;
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
 
-            for (i = 0; i < sURLVariables.length; i++) {
-                sParameterName = sURLVariables[i].split('=');
-
-                if (sParameterName[0] === sParam) {
-                    return sParameterName[1] === undefined ? true : sParameterName[1];
-                }
-            }
-        };
-        let lang = getUrlParameter("lang");
-        if(lang !== null){
-            if(lang === "en" || lang === "zh-Hant" || lang === "zh-Hans"){
-                window.location = window.location.origin + "/" + lang + "/index.html";
-            }
-        }
-    </script>
 </head>
 <body style="background-color: black">
 <div class="container-fluid">
@@ -57,9 +33,9 @@ From https://stackoverflow.com/questions/19491336/get-url-parameter-jquery-or-ho
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="/en/mtmcl/main.html">MTMCL</a>
                     <a class="dropdown-item" href="#">Minecraft Mods</a>
-                    <a class="dropdown-item" href="en/utau.html">UTAUloid</a>
+                    <a class="dropdown-item" href="/en/utau.html">UTAUloid</a>
                 </div>
-                <a href="en/links.html" class="btn btn-dark btn-lg" role="button">Links</a>
+                <a href="/en/links.html" class="btn btn-dark btn-lg" role="button">Links</a>
             </div>
         </div>
     </header>
@@ -73,9 +49,9 @@ From https://stackoverflow.com/questions/19491336/get-url-parameter-jquery-or-ho
         </div>
     </footer>
 </div>
-<script src="jquery/jquery-3.2.1.min.js"></script>
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="/jquery/jquery-3.2.1.min.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/scripts.js"></script>
 <script>
     $(function () {
         $("#actualBody").fadeIn(750, function(){

@@ -24,7 +24,7 @@ function makeImageHolder(width, height){
 
 function imgOnError(event){
     var img = event.target;
-    img.src = "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(makeImageHolder(img.width, img.height));
+    img.src = "data:images/svg+xml;charset=UTF-8," + encodeURIComponent(makeImageHolder(img.width, img.height));
 
 }
 
@@ -54,6 +54,27 @@ function gray(imgObj) {
     }
     canvasContext.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
     return canvas.toDataURL();
+}
+
+var c = window.location;
+
+function getLocale() {
+    var startInd = c.pathname.indexOf('/');
+    return c.pathname.substring(startInd + 1, c.pathname.indexOf('/', startInd + 1));
+}
+
+function getLocalizedPage(unlocal, locale) {
+    return c.origin + '/' + ((typeof locale !== undefined) ? locale : getLocale()) + unlocal;
+}
+
+function onmenuLinkClick(a) {
+    a.setAttribute("href", getLocalizedPage(a.getAttribute("href")));
+    return true;
+}
+
+function onLocaleChange(sel) {
+    var page = c.pathname.substring(c.pathname.indexOf('/', 2));
+    window.location = getLocalizedPage(page, sel.value);
 }
 
 var imgs = $("img.card-img-top");

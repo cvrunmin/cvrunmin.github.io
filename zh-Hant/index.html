@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cvrunmin 的空間</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+
+</head>
+<body style="background-color: black">
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top"
+         style=" background: transparent">
+        <div class="navbar-collapse">
+        </div>
+        <form class="form-inline">
+            <select class="custom-select" id="selectLang" onchange="onLocaleChange(this)">
+                <option value="en">English</option>
+                <option value="zh-Hans" selected>简体中文</option>
+                <option value="zh-Hant">繁體中文</option>
+            </select>
+        </form>
+    </nav>
+</div>
+<div id="actualBody" style="display: none;height: 100%">
+    <header class="header">
+        <div class="vertical-center" style="display: none">
+            <h1>cvrunmin.GitHub.io</h1>
+            <h3>歡迎至 cvrunmin 的空間</h3>
+            <div id="butLinks" style="top: 50px;opacity: 0; position: relative">
+            <a href="#" class="btn btn-dark btn-lg disabled" role="button" aria-disabled="true">關於我</a>
+            <a href="#" class="btn btn-dark btn-lg dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pieces</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/zh-Hant/mtmcl/main.html">MTMCL</a>
+                    <a class="dropdown-item" href="#">Minecraft 模組</a>
+                    <a class="dropdown-item" href="/zh-Hant/utau.html">UTAU 音源</a>
+                </div>
+                <a href="/zh-Hant/links.html" class="btn btn-dark btn-lg" role="button">友情連結</a>
+            </div>
+        </div>
+    </header>
+    <footer id="landing">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 mx-auto text-center">
+                    <p class="text-muted">Copyright &copy; cvrunmin</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="/jquery/jquery-3.2.1.min.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/scripts.js"></script>
+<script>
+    $(function () {
+        $("#actualBody").fadeIn(750, function(){
+            $("#actualBody").find("div.vertical-center").fadeIn(750, function(){
+                $("#butLinks").animate({
+                    top: '0px',
+                    opacity: '1.0'
+                });
+            });
+        });
+    })
+</script>
+</body>
+</html>

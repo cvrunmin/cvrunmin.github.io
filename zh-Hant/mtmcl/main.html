@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="cvronmin.GitHub.io : MTMCL">
+    <meta name="keywords" content="Minecraft Launcher">
+    <title>cvrunmin-MTMCL</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-reboot.min.css" type="text/javascript" rel="script">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+
+</head>
+<body>
+<!--<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/cvronmin">View on GitHub</a>
+        <a id="forkproject_banner" href="https://github.com/cvronmin/metocraft">View MTMCL Project on GitHub</a>
+
+        <h1 id="project_title">MTMCL</h1>
+        <h2 id="project_tagline">Minecraft啟動器新體驗<br/>New experience for Minecraft launcher</h2>
+        <section id="links" name="links">
+            <a id="normal_banner" href="../index.html">主頁Main Page</a>
+            <a id="normal_banner" href="main.html">MTMCL</a>
+            <a id="normal_banner" href="../links.html">友情連結Links</a>
+            <a id="normal_banner" href="../contact.html">聯絡Contact</a>
+        </section>
+        <section id="sublinks" name="sublinks">
+            <a href="main.html" id="small_normal_banner">MTMCL主頁 Main Page</a>
+            <a href="gui.html" id="small_normal_banner">界面 Interface</a>
+        </section>
+    </header>
+</div>-->
+<div class="card-deck" style="padding: 75px 5% 0 5%">
+    <div class="card">
+        <div class="card-header">
+            <nav class="nav nav-tabs card-header-tabs" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                   aria-controls="nav-home" aria-selected="true">主頁</a>
+                <a class="nav-item nav-link" id="nav-interface-tab" data-toggle="tab" href="#nav-interface" role="tab"
+                   aria-controls="nav-interface" aria-selected="false">界面</a>
+            </nav>
+        </div>
+        <div class="tab-content card-body" id="nav-tabContent">
+            <div id="nav-home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab">
+                <section id="main_content" class="inner">
+                    <img src="/images/mtmcl/main1.PNG" width="607" height="393"/>
+                    <h3>簡介</h3>
+                    <p>
+                        這是一個帶有Metro風格的Minecraft啟動器。
+                    </p>
+                    <h3>對於玩家</h3>
+                    你可以使用此啟動器來：
+                    <ol>
+                        <li>啟動原版Minecraft</li>
+                        <li>啟動Minecraft Forge或LiteLoader</li>
+                        <li>下載客戶端（包括原版及Minecraft Forge）、庫、資源<a href="" data-toggle="tooltip"
+                                                               title="啟動器支援官方源、BMCLAPI源。">[1]</a>
+                        </li>
+                        <li>自定義啟動器</li>
+                    </ol>
+                    <h3>對於服務器主</h3>
+                    你可以為啟動器套用相應文件以配合你的服務器<br>
+                    以下是格式:
+                    <div class="alert alert-danger" role="alert">
+                        <h4 class="alert-heading">警告！</h4>
+                        <p>此功能尚在開發中，可能有更改或不預期的結果。</p>
+                    </div>
+                    <div id="accordion" role="tablist">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="heading">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapse" aria-expanded="true" aria-controls="collapse">
+                                        顯示格式
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapse" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <pre><code>{
+                        /*啟動器標題(Unicode)*/
+                        "title" : "\u6DF7\u5409Server",
+                        /*服務器名稱*/
+                        "server-name" : "a server",
+                        /*服務器IP*/
+                        "server-ip" : "127.0.0.1:25565",
+                        /*客戶端名稱(作為遊戲路徑)*/
+                        "client-name" : ".minecraft",
+                        /*是否需要下載整合包?*/
+                        "need-server-pack" : true,
+                        /*整合包網址(need-server-pack值為false時可留空)*/
+                        "server-pack-url" : "https://www.dropbox.com/s/*****/*****?dl=1",
+                        /*是否允許下載庫及資源?*/
+                        "allow-download-library-and-asset" : false,
+                        /*是否允許重新下載庫及資源?*/
+                        "allow-redownload-library-and-asset" : false,
+                        /*是否允許自行下載客戶端?*/
+                        "allow-self-download-client" : false,
+                        /*是否鎖定背景?*/
+                        "lock-background" : true,
+                        /*背景路徑*/
+                        "background-path" : "C:\\Users\\Ryan\\Pictures\\idle10.png",
+                        /*自定義認證服務器*/
+                        "auths" : [
+                        {
+                        /*名稱*/
+                        "auth-name" : "Local 1",
+                        /*網址*/
+                        "auth-url" : "127.0.0.1"
+                        },
+                        {
+                        "auth-name" : "Local 2",
+                        "auth-url" : "localhost"
+                        },
+                        {
+                        "auth-name" : "Local 3",
+                        "auth-url" : "127.0.0.1"
+                        },
+                        {
+                        "auth-name" : "Local 4",
+                        "auth-url" : "127.0.0.1"
+                        }
+                        ]
+                        }</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>下載</h3>
+                    <a href="https://github.com/cvrunmin/metocraft/releases/latest">最新發布</a><br>
+                    <a href="https://github.com/cvrunmin/metocraft/releases/download/MTMCL---v2.1.5.101/MTMCL.exe">從GitHub下載
+                        </a><br>
+                    <a href="http://pan.baidu.com/s/1nu2FoKx">從百度雲下載</a><br>
+                    另：源代碼可在GitHub查看
+                    <p>
+                    <h3>鳴謝</h3><br>
+                    感謝bangbang93開放BMCLV3代碼。<br>
+                    感謝其他網上教程。
+                    <hr>
+                </section>
+            </div>
+            <div id="nav-interface" class="tab-pane fade show" role="tabpanel" aria-labelledby="nav-interface-tab">
+                <section id="main_content" class="inner">
+                    <h3>界面</h3>
+                    <img src="/images/mtmcl/gui1.PNG" width="1001" height="393" alt=""/>
+                    <ol>
+                        <li>切換至遊戲啟動界面</li>
+                        <li>切換至下載界面</li>
+                        <li>切換至設定界面</li>
+                        <li>切換至關於界面</li>
+                        <li>切換至高級遊戲啟動界面</li>
+                        <li>打開/關閉任務列表</li>
+                    </ol>
+                    <img src="/images/mtmcl/gui2.PNG" width="607" height="393" alt=""/> <img src="/images/mtmcl/gui2-1.PNG"
+                                                                                                  width="607"
+                                                                                                  height="393" alt=""/> <img
+                        src="/images/mtmcl/gui2-2.PNG" width="607" height="393" alt=""/> <img src="/images/mtmcl/gui2-3.PNG"
+                                                                                                   width="607"
+                                                                                                   height="393" alt=""/> <img
+                        src="/images/mtmcl/gui2-4.PNG" width="607" height="393" alt=""/> <img src="/images/mtmcl/gui2-5.PNG"
+                                                                                                   width="607"
+                                                                                                   height="393" alt=""/> <img
+                        src="/images/mtmcl/gui3.PNG" width="607" height="393" alt=""/> <img src="/images/mtmcl/gui4.PNG" width="607"
+                                                                                                 height="393" alt=""/></section>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/jquery/jquery-3.2.1.min.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/scripts.js"></script>
+<script src="/js/headerfooter.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>

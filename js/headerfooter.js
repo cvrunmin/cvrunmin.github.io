@@ -14,16 +14,23 @@ const HEADER = `<div class="container-fluid">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">Pieces</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/mtmcl/main.html">MTMCL</a>
-                        <a class="dropdown-item" href="#">Minecraft Mods</a>
-                        <a class="dropdown-item" href="/utau.html">UTAUloid</a>
+                        <a class="dropdown-item" onclick="onmenuLinkClick(this)" href="/mtmcl/main.html">MTMCL</a>
+                        <a class="dropdown-item" onclick="onmenuLinkClick(this)" href="#">Minecraft Mods</a>
+                        <a class="dropdown-item" onclick="onmenuLinkClick(this)" href="/utau.html">UTAUloid</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/links.html">Links</a>
+                    <a class="nav-link" onclick="onmenuLinkClick(this)" href="/links.html">Links</a>
                 </li>
             </ul>
         </div>
+        <form class="form-inline">
+        <select class="custom-select" id="selectLang" onchange="onLocaleChange(this)">
+        <option value="en" selected>English</option>
+        <option value="zh-Hans">简体中文</option>
+        <option value="zh-Hant">繁體中文</option>
+</select>
+</form>
     </nav>
 </div>`;
 const FOOTER = `<footer>
@@ -35,6 +42,28 @@ const FOOTER = `<footer>
         </div>
     </div>
 </footer>`;
+var c = window.location;
+
+function getLocale() {
+    var startInd = c.pathname.indexOf('/');
+    return c.pathname.substring(startInd + 1, c.pathname.indexOf('/', startInd + 1));
+}
+
+function getLocalizedPage(unlocal, locale) {
+	return c.origin + '/' + ((typeof locale !== undefined) ? locale : getLocale()) + unlocal;
+}
+
+function onmenuLinkClick(a) {
+	a.setAttribute("href", getLocalizedPage(a.getAttribute("href")));
+	return true;
+}
+
+function onLocaleChange(sel) {
+	var page = c.pathname.substring(c.pathname.indexOf('/', 2));
+	window.location = getLocalizedPage(page, sel.value);
+}
+
 $(function(){
-	$("body").prepend(HEADER).append(FOOTER)
+	$("body").prepend(HEADER).append(FOOTER);
+	$("#selectLang").val(getLocale());
 })

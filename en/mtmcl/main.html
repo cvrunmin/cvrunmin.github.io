@@ -6,9 +6,9 @@
     <meta name="description" content="cvronmin.GitHub.io : MTMCL">
     <meta name="keywords" content="Minecraft Launcher">
     <title>cvrunmin-MTMCL</title>
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bootstrap/css/bootstrap-reboot.min.css" type="text/javascript" rel="script">
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-reboot.min.css" type="text/javascript" rel="script">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
 
 </head>
 <body>
@@ -44,26 +44,24 @@
         <div class="tab-content card-body" id="nav-tabContent">
             <div id="nav-home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab">
                 <section id="main_content" class="inner">
-                    <img src="images/main1.PNG" width="607" height="393"/>
-                    <h3>簡介 Introduction</h3>
+                    <img src="/images/mtmcl/main1.PNG" width="607" height="393"/>
+                    <h3>Introduction</h3>
                     <p>
-                        這是一個帶有Metro風格的Minecraft啟動器。<br/>This is a Minecraft launcher with Metro style.
+                        This is a Minecraft launcher with Metro style.
                     </p>
-                    <h3>對於玩家 For Player</h3>
-                    你可以使用此啟動器來：<br>You can use this launcher for:
+                    <h3>For Player</h3>
+                    You can use this launcher for:
                     <ol>
-                        <li>啟動原版Minecraft<br>Launch Vanilla Minecraft</li>
-                        <li>啟動Minecraft Forge或LiteLoader<br>Launch Minecraft Forge or LiteLoader</li>
-                        <li>下載客戶端（包括原版及Minecraft Forge）、庫、資源<a href="#" data-toggle="tooltip" data-html="true"
-                                                               title="啟動器支援官方源、BMCLAPI源。<br>Launcher supports official and BMCLAPI download source.">[1]</a><br>Download
-                            Client(including Vanilla and Minecraft Forge),
-                            libraries and resources(assets)
+                        <li>Launch Vanilla Minecraft</li>
+                        <li>Launch Minecraft Forge or LiteLoader</li>
+                        <li>Download Client(including Vanilla and Minecraft Forge), libraries and resources(assets)<a href="" data-toggle="tooltip"
+                                                               title="Launcher supports official and BMCLAPI download source.">[1]</a>
                         </li>
-                        <li>自定義啟動器<br>Customize the launcher</li>
+                        <li>Customize the launcher</li>
                     </ol>
-                    <h3>對於服務器主 For Server Owner</h3>
-                    你可以為啟動器套用相應文件以配合你的服務器<br>You can apply the file to match your server<br>
-                    以下是格式 Here is the format:
+                    <h3>For Server Owner</h3>
+                    You can apply the file to match your server<br>
+                    Here is the format:
                     <div class="alert alert-danger" role="alert">
                         <h4 class="alert-heading">Warning!</h4>
                         <p>This function is still in progress and may have unanticipated result and further changes. Use with caution.</p>
@@ -80,35 +78,34 @@
                             <div id="collapse" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordion">
                                 <div class="card-body">
                                     <pre><code>{
-                        /*啟動器標題 Launcher Title(Unicode)*/
+                        /*Launcher Title(Unicode)*/
                         "title" : "\u6DF7\u5409Server",
-                        /*服務器名稱 Server name*/
+                        /*Server name*/
                         "server-name" : "a server",
-                        /*服務器IP Server IP*/
+                        /*Server IP*/
                         "server-ip" : "127.0.0.1:25565",
-                        /*客戶端名稱 Client name(作為遊戲路徑 as game directory)*/
+                        /*Client name( as game directory)*/
                         "client-name" : ".minecraft",
-                        /*是否需要下載整合包 Is it necessary to download mod pack?*/
+                        /*Is it necessary to download mod pack?*/
                         "need-server-pack" : true,
-                        /*整合包網址(need-server-pack值為false時可留空) Mod pack address(blank is allowed if need-server-pack is
-                        false)*/
+                        /*Mod pack address(leave it blank if need-server-pack is set to false)*/
                         "server-pack-url" : "https://www.dropbox.com/s/*****/*****?dl=1",
-                        /*是否允許下載庫及資源Is it allow to download libraries and assets?*/
+                        /*Is it allow to download libraries and assets?*/
                         "allow-download-library-and-asset" : false,
-                        /*是否允許重新下載庫及資源Is it allow to re-download libraries and assets?*/
+                        /*Is it allow to re-download libraries and assets?*/
                         "allow-redownload-library-and-asset" : false,
-                        /*是否允許自行下載客戶端Is it allow to download client by user themselves?*/
+                        /*Is it allow to download client by user themselves?*/
                         "allow-self-download-client" : false,
-                        /*是否鎖定背景Is it lock background?*/
+                        /*Is it lock background?*/
                         "lock-background" : true,
-                        /*背景路徑Background Path*/
+                        /*Background Path*/
                         "background-path" : "C:\\Users\\Ryan\\Pictures\\idle10.png",
-                        /*自定義認證服務器custom authenticator*/
+                        /*custom authenticator*/
                         "auths" : [
                         {
-                        /*名稱name*/
+                        /*name*/
                         "auth-name" : "Local 1",
-                        /*網址url*/
+                        /*url*/
                         "auth-url" : "127.0.0.1"
                         },
                         {
@@ -130,50 +127,49 @@
                         </div>
                     </div>
                     <h3>下載 Download</h3>
-                    <a href="https://github.com/cvronmin/metocraft/releases/latest">最新發布 Latest Release</a><br>
-                    <a href="https://github.com/cvronmin/metocraft/releases/download/MTMCL---v2.1.5.101/MTMCL.exe">從GitHub下載
-                        Download from GitHub</a><br>
-                    <a href="http://pan.baidu.com/s/1nu2FoKx">從百度雲下載 Download From Baidu Yun</a><br>
-                    另：源代碼可在GitHub查看<br>PS: Sources code can be view at GitHub
+                    <a href="https://github.com/cvrunmin/metocraft/releases/latest">Latest Release</a><br>
+                    <a href="https://github.com/cvrunmin/metocraft/releases/download/MTMCL---v2.1.5.101/MTMCL.exe">Download from GitHub</a><br>
+                    <a href="http://pan.baidu.com/s/1nu2FoKx">Download From Baidu Yun</a><br>
+                    PS: Sources code can be view at GitHub
                     <p>
-                    <h3>鳴謝 Thanks</h3><br>
-                    感謝bangbang93開放BMCLV3代碼。Thank bangbang93 for the sources code of BMCLV3<br>
-                    感謝其他網上教程。Thank the other tutorials on the Internet
+                    <h3>Thanks</h3><br>
+                    Thank bangbang93 for the sources code of BMCLV3<br>
+                    Thank the other tutorials on the Internet
                     <hr>
                 </section>
             </div>
             <div id="nav-interface" class="tab-pane fade show" role="tabpanel" aria-labelledby="nav-interface-tab">
                 <section id="main_content" class="inner">
-                    <h3>界面 Interface</h3>
-                    <img src="images/gui1.PNG" width="1001" height="393" alt=""/>
+                    <h3>Interface</h3>
+                    <img src="/images/mtmcl/gui1.PNG" width="1001" height="393" alt=""/>
                     <ol>
-                        <li>切換至遊戲啟動界面 Switch to Game Launching Interface</li>
-                        <li>切換至下載界面 Switch to Download Interface</li>
-                        <li>切換至設定界面 Switch to Setting Interface</li>
-                        <li>切換至關於界面 Switch to About Interface</li>
-                        <li>切換至高級遊戲啟動界面 Switch to Advanced Game Launching Interface</li>
-                        <li>打開/關閉任務列表 Open/Close the Task List</li>
+                        <li>Switch to Game Launching Interface</li>
+                        <li>Switch to Download Interface</li>
+                        <li>Switch to Setting Interface</li>
+                        <li>Switch to About Interface</li>
+                        <li>Switch to Advanced Game Launching Interface</li>
+                        <li>Open/Close the Task List</li>
                     </ol>
-                    <img src="images/gui2.PNG" width="607" height="393" alt=""/> <img src="images/gui2-1.PNG"
+                    <img src="/images/mtmcl/gui2.PNG" width="607" height="393" alt=""/> <img src="/images/mtmcl/gui2-1.PNG"
                                                                                       width="607"
                                                                                       height="393" alt=""/> <img
-                        src="images/gui2-2.PNG" width="607" height="393" alt=""/> <img src="images/gui2-3.PNG"
+                        src="/images/mtmcl/gui2-2.PNG" width="607" height="393" alt=""/> <img src="/images/mtmcl/gui2-3.PNG"
                                                                                        width="607"
                                                                                        height="393" alt=""/> <img
-                        src="images/gui2-4.PNG" width="607" height="393" alt=""/> <img src="images/gui2-5.PNG"
+                        src="/images/mtmcl/gui2-4.PNG" width="607" height="393" alt=""/> <img src="/images/mtmcl/gui2-5.PNG"
                                                                                        width="607"
                                                                                        height="393" alt=""/> <img
-                        src="images/gui3.PNG" width="607" height="393" alt=""/> <img src="images/gui4.PNG" width="607"
+                        src="/images/mtmcl/gui3.PNG" width="607" height="393" alt=""/> <img src="/images/mtmcl/gui4.PNG" width="607"
                                                                                      height="393" alt=""/></section>
 
             </div>
         </div>
     </div>
 </div>
-<script src="../jquery/jquery-3.2.1.min.js"></script>
-<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../js/scripts.js"></script>
-<script src="../js/headerfooter.js"></script>
+<script src="/jquery/jquery-3.2.1.min.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/scripts.js"></script>
+<script src="/js/headerfooter.js"></script>
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
